@@ -1,0 +1,29 @@
+
+{% load static %}
+<!-- ========================= FOOTER ========================= -->
+<div class="container">
+    <p class="float-right mb-1"><a href="#" style="color:#5b9bb8;">Back to top</a></p>
+  </div>
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa fa-envelope" style="color:dimgray;"></i> info@mtimestore.com</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="fa fa-phone" style="color:dimgray;"></i> Call us </a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© copy 2021 Mtime</p>
+  </footer>
+</div>
+
+<!-- ========================= FOOTER END // ========================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();
+			$('.mainImage img').attr('src', $(this).attr("href"));
+		})
+	})
+</script>
+
